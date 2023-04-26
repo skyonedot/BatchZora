@@ -1,8 +1,11 @@
 ## Batch Mint Zora NFT
 
 - 用于批量Mint Zora发行的NFT, 尤其是针对每个钱包最多Mint 1个的情况
+    - [Base](https://opensea.io/collection/base-introduced)
+    - [Safe](https://opensea.io/collection/safe-core-introduced)
+    - [Facaster](https://opensea.io/collection/farcaster-alpaca)
 
-- 代码主要来于 [@0xKISS][https://twitter.com/0xKISS] Batch Mint XEN的代码: https://github.com/neal-zhu/batcher 
+- 代码主要来于 [@0xKISS](https://twitter.com/0xKISS) Batch Mint XEN的代码: https://github.com/neal-zhu/batcher 
 
 - contracts 文件夹里有V1和V2版本
 
@@ -15,6 +18,7 @@
     > - 选择哪种看个人
 
 - test 文件夹下写好了V1和V2的测试版本, 注意将 .env.example 修改为.env 
+    - 直接 `npx hardhat test`  即可
 
 - 执行execute的时候, 注意
   - 传入五个参数, 分别是 计数合约的起始位置(start), 打多少个(count), 向哪个合约发起tx(target_address), tx的data(data), NFT的接收者(receiver)
